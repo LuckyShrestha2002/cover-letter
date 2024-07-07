@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Generator for Domain Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Cover Letter Generator for Domain Registration</div>
+        <div class="content">
+            <div class="cover-letter-section">
+                <div class="cover-letter-box">
+                    <textarea id="cover-letter" rows="20" readonly></textarea>
+                </div>
+                <div class="button-container">
+                    <button onclick="generatePDF()">Download PDF</button>
+                </div>
+            </div>
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="purpose">Purpose</label>
+                    <input type="text" id="purpose" name="purpose" value="Personal">
+                </div>
+                <div class="form-group">
+                    <label for="domain">Domain Name</label>
+                    <input type="text" id="domain" name="domain" value="luckyshrestha.com.np">
+                </div>
+                <div class="form-group">
+                    <label for="primary-ns">Primary Name Server</label>
+                    <input type="text" id="primary-ns" name="primary-ns" value="ns1.hosting.net.np">
+                </div>
+                <div class="form-group">
+                    <label for="secondary-ns">Secondary Name Server</label>
+                    <input type="text" id="secondary-ns" name="secondary-ns" value="ns2.hosting.net.np">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="Lucky">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" value="luckyshrestha92@gmail.com">
+                </div>
+                <div class="button-container">
+                    <button onclick="generateCoverLetter()">Generate Cover Letter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
