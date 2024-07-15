@@ -14,6 +14,7 @@
             <div class="cover-letter-section">
                 <div class="cover-letter-box">
                     <textarea id="cover-letter" rows="20" readonly></textarea>
+                    <div class="date-section" id="date-display"></div> <!-- Date section -->
                 </div>
                 <div class="button-container">
                     <button onclick="generatePDF()">Download PDF</button>
@@ -22,27 +23,27 @@
             <div class="form-section">
                 <div class="form-group">
                     <label for="purpose">Purpose</label>
-                    <input type="text" id="purpose" name="purpose" value="Personal">
+                    <input type="text" id="purpose" name="purpose" placeholder="Personal">
                 </div>
                 <div class="form-group">
                     <label for="domain">Domain Name</label>
-                    <input type="text" id="domain" name="domain" value="luckyshrestha.com.np">
+                    <input type="text" id="domain" name="domain" placeholder="luckyshrestha.com.np">
                 </div>
                 <div class="form-group">
                     <label for="primary-ns">Primary Name Server</label>
-                    <input type="text" id="primary-ns" name="primary-ns" value="ns1.hosting.net.np">
+                    <input type="text" id="primary-ns" name="primary-ns" placeholder="ns1.hosting.net.np">
                 </div>
                 <div class="form-group">
                     <label for="secondary-ns">Secondary Name Server</label>
-                    <input type="text" id="secondary-ns" name="secondary-ns" value="ns2.hosting.net.np">
+                    <input type="text" id="secondary-ns" name="secondary-ns" placeholder="ns2.hosting.net.np">
                 </div>
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" value="Lucky">
+                    <input type="text" id="name" name="name" placeholder="Lucky Shrestha">
                 </div>
                 <div class="form-group">
                     <label for="address">Address</label>
-                    <input type="text" id="address" name="address" value="luckyshrestha92@gmail.com">
+                    <input type="text" id="address" name="address" placeholder="Bhaktapur">
                 </div>
                 <div class="button-container">
                     <button onclick="generateCoverLetter()">Generate Cover Letter</button>
